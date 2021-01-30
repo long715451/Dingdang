@@ -6,7 +6,7 @@
 				round
 				width="50px"
 				height="50px"
-				:src="`http://localhost:3000/${userInfo.avatar}`"
+				:src="`https://ddys.applinzi.com/${userInfo.avatar}`"
 			/>
 		</van-cell>
 		<van-cell
@@ -62,7 +62,7 @@ import Toast from "vant";
 export default {
 	data() {
 		return {
-			imgSrc: `http://localhost:3000/default-avatar.png`,
+			imgSrc: `https://ddys.applinzi.com/default-avatar.png`,
 			isShow: false,
 			fullScreenH: "",
 			autochecked: true,

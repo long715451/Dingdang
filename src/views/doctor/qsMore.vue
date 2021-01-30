@@ -27,7 +27,7 @@
 				<div class="public-question-title">
 					<div style="width:20px;height:20px">
 						<img
-							:src="`http://localhost:3000/${article.avatar}`"
+							:src="`https://ddys.applinzi.com/${article.avatar}`"
 							style="width:100%"
 						/>
 					</div>

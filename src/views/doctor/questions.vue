@@ -104,7 +104,7 @@
 						>
 							<img
 								style="width:100%"
-								:src="`http://localhost:3000/${article.avatar}`"
+								:src="`https://ddys.applinzi.com/${article.avatar}`"
 							/>
 						</div>
 						<p style="margin-left:6px;font-size:17px">

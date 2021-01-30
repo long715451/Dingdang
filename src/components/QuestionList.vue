@@ -1,8 +1,7 @@
 <template>
 	<div class="question-list" @click="gotoDetail(index)">
 		<div class="question-list-header">
-			<!-- <div class="img"><img v-lazy="`https://ddys.applinzi.com/${imgurl}`" /></div> -->
-            <div class="img"><img v-lazy="`http://localhost:3000/${imgurl}`" /></div>
+			<div class="img"><img v-lazy="`https://ddys.applinzi.com/${imgurl}`" /></div>
 			<p>{{ nickname | nicknameFormat}}</p>
 		</div>
 		<div class="question-list-content">

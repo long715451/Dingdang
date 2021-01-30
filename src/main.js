@@ -17,8 +17,8 @@ Vue.use(Lazyload)
 
 // 引入axios模块
 import axios from 'axios'
-axios.defaults.baseURL = '/api'
-// axios.defaults.baseURL = 'https://ddys.applinzi.com'
+// axios.defaults.baseURL = '/api'
+axios.defaults.baseURL = 'https://ddys.applinzi.com'
 Vue.prototype.axios=axios
 let toast;
 axios.interceptors.request.use(config=>{
