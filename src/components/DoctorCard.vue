@@ -3,7 +3,7 @@
 		<div class="Doctors" v-for="(item, index) of context" :key="index" @click="goToDetail(item.doctor_id)">
 			<div>
 				<div class="Photo">
-					<img :src="require(`../assets/img/${item.avatar}`)" />
+					<img v-lazy="require(`@/assets/img/${item.avatar}`)" />
 				</div>
 				<div class="Text">
 					<p class="title">

@@ -10,7 +10,7 @@
       @focus="gotoSearch"
     >
       <template #left-icon>
-        <van-icon :name="require('../assets/443-22.png')"></van-icon>
+        <van-icon :name="require('@/assets/443-22.png')"></van-icon>
       </template>
     </van-search>
     <!-- 输入框结束 -->
@@ -21,14 +21,14 @@
           <router-link to="/consult">
             <van-image
               width="40"
-              :src="require('../assets/Check-the-disease1.png')"
+              :src="require('@/assets/Check-the-disease1.png')"
             />
           </router-link>
           <p>查疾病</p>
         </van-col>
         <van-col span="6">
           <router-link to="/officeDepartment">
-            <van-image width="40" :src="require('../assets/Check-drug2.png')" />
+            <van-image width="40" :src="require('@/assets/Check-drug2.png')" />
           </router-link>
           <p>问医生</p>
         </van-col>
@@ -36,7 +36,7 @@
           <router-link to="/hospital">
             <van-image
               width="40"
-              :src="require('../assets/Check-the-hospital3.png')"
+              :src="require('@/assets/Check-the-hospital3.png')"
             />
           </router-link>
           <p>查医院</p>
@@ -44,7 +44,7 @@
         <van-col span="6" @click="Article">
           <van-image
             width="40"
-            :src="require('../assets/First-aid-guide6.png')"
+            :src="require('@/assets/First-aid-guide6.png')"
           />
           <p>查文章</p>
         </van-col>
@@ -119,7 +119,7 @@
       <van-image
         width="375"
         height="143"
-        :src="require('../assets/last-title.png')"
+        :src="require('@/assets/last-title.png')"
       />
     </div>
     <tab-bar tabbarActive="wiki"></tab-bar>
@@ -209,7 +209,7 @@ export default {
       // console.log(result.data.data)
       let titleImg = result.data.data;
       titleImg.forEach((element) => {
-        element.background_img = require("../assets/img/" +
+        element.background_img = require("@/assets/img/" +
           element.background_img);
       });
       this.arryJk = titleImg.slice(0, 12);

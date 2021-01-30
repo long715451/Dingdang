@@ -9,7 +9,7 @@
 			<div class="header-doctor">
 				<div>
 					<!-- 头像 -->
-					<img :src="require(`../assets/img/${doctor.davatar}`)" />
+					<img :src="require(`@/assets/img/${doctor.davatar}`)" />
 				</div>
 				<div>
 					<p style="color:#4d4d4d;font-size:17px;margin:0">
@@ -43,7 +43,7 @@
 			<div>
 				<div style="font-weight:500;display:flex;align-items:center">
 					<div style="width:36px;height:36px;border-radius:50%;overflow:hidden">
-						<img :src="require(`../assets/img/${doctor.davatar}`)" />
+						<img :src="require(`@/assets/img/${doctor.davatar}`)" />
 					</div>
 					<span style="margin-left:10px">{{ doctor.nickname }} 医生</span>
 				</div>

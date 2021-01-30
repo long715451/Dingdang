@@ -11,7 +11,7 @@
 				@focus="gotoSearch"
 				placeholder="搜索公开问题"
 				shape="round"
-				:left-icon="require('../assets/serch.png')"
+				:left-icon="require('@/assets/serch.png')"
 			/>
 		</div>
 		<!-- 头部结束 -->
@@ -104,7 +104,7 @@
 						>
 							<img
 								style="width:100%"
-								:src="`https://ddys.applinzi.com/${article.avatar}`"
+								:src="`http://localhost:3000/${article.avatar}`"
 							/>
 						</div>
 						<p style="margin-left:6px;font-size:17px">

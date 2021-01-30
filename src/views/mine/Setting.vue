@@ -6,7 +6,7 @@
 				round
 				width="50px"
 				height="50px"
-				:src="`https://ddys.applinzi.com/${userInfo.avatar}`"
+				:src="`http://localhost:3000/${userInfo.avatar}`"
 			/>
 		</van-cell>
 		<van-cell
@@ -40,6 +40,7 @@
 			ref="uploader"
 			:max-size="10 * 1024 * 1024"
 			@oversize="onOversize"
+            :before-read="beforeRead"
 		>
 			<div style="display: none"></div>
 		</van-uploader>
@@ -58,11 +59,10 @@
 <script>
 import { mapState, mapMutations } from "vuex";
 import Toast from "vant";
-import Cropper from "cropperjs";
 export default {
 	data() {
 		return {
-			imgSrc: `https://ddys.applinzi.com/default-avatar.png`,
+			imgSrc: `http://localhost:3000/default-avatar.png`,
 			isShow: false,
 			fullScreenH: "",
 			autochecked: true,
@@ -71,6 +71,13 @@ export default {
 		};
 	},
 	methods: {
+        beforeRead(file) {
+			if (file.type !== "image/jpeg" && file.type !== "image/png") {
+				this.$toast("请上传 jpg/png 格式图片");
+				return false;
+			}
+			return true;
+		},
 		afterRead(file) {
 			this.isShow = true;
 			this.imgSrc = file.content;

@@ -24,4 +24,12 @@ export default [
 		component: () =>
             import(/* webpackChunkName: "Hospital" */ "@/views/hospital/Hospital"),
     },
+    {
+		path: "/hospital/hospitallocation",
+		name: "HospitalLocation",
+		component: () =>
+			import(
+				/* webpackChunkName: "hospitallocation" */ "@/views/hospital/HospitalLocation"
+			),
+	},
 ]

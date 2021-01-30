@@ -394,7 +394,7 @@ export default {
           .then((result) => {
             this.doctoritem = result.data.data;
             this.doctoritem.forEach((item) => {
-              item.avatar = require("../assets/img/" + item.avatar);
+              item.avatar = require("@/assets/img/" + item.avatar);
             });
           });
       } else if (min != "" && name == "") {
@@ -403,7 +403,7 @@ export default {
           .then((result) => {
             this.doctoritem = result.data.data;
             this.doctoritem.forEach((item) => {
-              item.avatar = require("../assets/img/" + item.avatar);
+              item.avatar = require("@/assets/img/" + item.avatar);
             });
           });
       } else {
@@ -415,7 +415,7 @@ export default {
           .then((result) => {
             this.doctoritem = result.data.data;
             this.doctoritem.forEach((item) => {
-              item.avatar = require("../assets/img/" + item.avatar);
+              item.avatar = require("@/assets/img/" + item.avatar);
             });
           });
       }
@@ -428,7 +428,7 @@ export default {
         .then((result) => {
           this.doctoritem = result.data.data;
           this.doctoritem.forEach((item) => {
-            item.avatar = require("../assets/img/" + item.avatar);
+            item.avatar = require("@/assets/img/" + item.avatar);
           });
           this.title = this.doctoritem[0].office_name;
         });
@@ -449,7 +449,7 @@ export default {
         .then((result) => {
           this.doctoritem = result.data.data;
           this.doctoritem.forEach((item) => {
-            item.avatar = require("../assets/img/" + item.avatar);
+            item.avatar = require("@/assets/img/" + item.avatar);
           });
           this.title = this.doctoritem[0].office_name;
         });
@@ -465,7 +465,7 @@ export default {
       this.axios.post('/cityclick',`officeID=${officeID}&cityId=${cityId}`).then(result=>{
           this.doctoritem = result.data.data;
           this.doctoritem.forEach((item) => {
-            item.avatar = require("../assets/img/" + item.avatar);
+            item.avatar = require("@/assets/img/" + item.avatar);
           });
       })
     }

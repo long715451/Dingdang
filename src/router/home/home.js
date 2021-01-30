@@ -1,4 +1,4 @@
-import Home from "../views/Home.vue";
+import Home from "@/views/home/Home.vue";
 export default [
     {
 		path: "/",
@@ -10,24 +10,17 @@ export default [
 	{
 		path: "/mine",
 		name: "Mine",
-		component: () => import(/* webpackChunkName: "mine" */ "@/views/Mine"),
+		component: () => import(/* webpackChunkName: "mine" */ "@/views/home/Mine"),
 		meta: { index: 3 },
 	},
 	{
 		path: "/search",
 		name: "Search",
 		component: () =>
-			import(/* webpackChunkName: "search" */ "@/views/Search"),
+			import(/* webpackChunkName: "search" */ "@/views/home/Search"),
 		meta: { index: 1, keepAlive: true },
 	},
-	{
-		path: "/hospital/hospitallocation",
-		name: "HospitalLocation",
-		component: () =>
-			import(
-				/* webpackChunkName: "hospitallocation" */ "@/views/hospital/HospitalLocation"
-			),
-	},
+	
 
 
 

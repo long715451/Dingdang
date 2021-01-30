@@ -22,8 +22,11 @@
 							{{ country.currentConfirmedCount }}
 						</div>
 						<div class="yesterday">
-							昨日<span class="color1"
+							昨日<span class="color1" v-if="country.currentConfirmedIncr > 0"
 								>+{{ country.currentConfirmedIncr }}</span
+							>
+							<span class="color1" v-else
+								>{{ country.currentConfirmedIncr }}</span
 							>
 						</div>
 					</div>
@@ -31,8 +34,11 @@
 						<div class="title">无症状</div>
 						<div class="num color2">{{ country.seriousCount }}</div>
 						<div class="yesterday">
-							昨日<span class="color2"
+							昨日<span class="color2" v-if="country.seriousIncr > 0"
 								>+{{ country.seriousIncr }}</span
+							>
+                            <span class="color2" v-else
+								>{{ country.seriousIncr }}</span
 							>
 						</div>
 					</div>
@@ -40,8 +46,11 @@
 						<div class="title">现有疑似</div>
 						<div class="num color3">{{ aliData.incDoubtful }}</div>
 						<div class="yesterday">
-							昨日<span class="color3"
+							昨日<span class="color3" v-if="aliData.incDoubtful > 0"
 								>+{{ aliData.incDoubtful }}</span
+							>
+                            <span class="color3" v-else
+								>{{ aliData.incDoubtful }}</span
 							>
 						</div>
 					</div>
@@ -69,8 +78,11 @@
 							{{ country.suspectedCount }}
 						</div>
 						<div class="yesterday">
-							昨日<span class="color6"
+							昨日<span class="color6" v-if="country.suspectedIncr >0"
 								>+{{ country.suspectedIncr }}</span
+							>
+                            <span class="color6" v-else
+								>{{ country.suspectedIncr }}</span
 							>
 						</div>
 					</div>

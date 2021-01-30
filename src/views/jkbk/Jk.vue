@@ -12,7 +12,7 @@
       @focus="gotoSearch"
     >
       <template #left-icon>
-        <van-icon :name="require('../assets/443-22.png')"></van-icon>
+        <van-icon :name="require('@/assets/443-22.png')"></van-icon>
       </template>
     </van-search>
     <!-- 输入框结束 -->
@@ -38,7 +38,7 @@
         <van-image
           width="22"
           height="22"
-          :src="require('../assets/qustion.png')"
+          :src="require('@/assets/qustion.png')"
         />
         <h3 class="h3">大家都在问</h3>
         <span class="font_12">精选公开问题</span>
@@ -352,7 +352,7 @@ export default {
       .then((result) => {
         this.articleAll = result.data.data;
         this.articleAll.forEach((item) => {
-          item.img = require("../assets/img/" + item.img);
+          item.img = require("@/assets/img/" + item.img);
         });
       });
     //拿到地址栏参数传请求后台获取相关疾病 /relatedDiseases get 

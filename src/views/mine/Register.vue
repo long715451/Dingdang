@@ -25,7 +25,7 @@ export default {
             password: '',
             repassword: '',
             usernameReg: /^1[0-9]{10}$/,
-            passwordReg: /^[a-zA-Z](?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9]{5,19}$/
+            passwordReg: /^[a-zA-Z][a-zA-Z0-9]{5,19}$/
         };
     },
     methods: {
@@ -44,7 +44,7 @@ export default {
                 Toast('请输入密码');
                 return;
             }
-            if(!this.passwordReg.test(this.password)){
+            if(!this.passwordReg.test(this.password) || /^[a-zA-Z]+$/.test(this.password)){
                 Toast('密码必须为字母开头的字母数字组合');
                 return false;
             }
@@ -57,13 +57,13 @@ export default {
         },
         register(){
                 var usernameReg = /^1[0-9]{10}$/;
-                var passwordReg = /^[a-zA-Z](?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9]{5,19}$/;
+                var passwordReg = /^[a-zA-Z][a-zA-Z0-9]{5,19}$/;
                 if(!usernameReg.test(this.username)){
                     
                     Toast('手机号不正确');
                     return false;
                 }
-                if(!passwordReg.test(this.password)){
+                if(!passwordReg.test(this.password) || /^[a-zA-Z]+$/.test(this.password)){
                     Toast('密码必须为字母开头的字母数字组合');
                     return false;
                 }

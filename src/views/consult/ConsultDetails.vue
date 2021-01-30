@@ -20,12 +20,12 @@
         <h1>{{ article.name }}</h1>
         <h3>就诊科室：{{ doctor.office_name }}</h3>
         <p>
-          词条作者<img src="../assets/img/img1.png" /><span
+          词条作者<img src="@/assets/img/img1.png" /><span
             >叮当医生医学团队</span
           >
         </p>
         <p>
-          审核专家<img src="../assets/img/img2.jpg" /><span
+          审核专家<img src="@/assets/img/img2.jpg" /><span
             >{{ doctor.nickname }} {{ doctor.office_name }}
             {{ doctor.level }}</span
           >
@@ -47,7 +47,7 @@
         sticky
         offset-top="46px"
       >
-        <img style="width: 100%" src="../assets/img/img4.png" />
+        <img style="width: 100%" src="@/assets/img/img4.png" />
         <van-tab
           class="tab-style"
           v-for="(item, index) in article.description"

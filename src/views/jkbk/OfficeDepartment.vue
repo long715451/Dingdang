@@ -141,7 +141,7 @@ export default {
     this.axios.get('/officeAll').then(res=>{
       this.officeAll=res.data.data
       this.officeAll.forEach(item=>{
-        item.office_img=require("../assets/img/"+item.office_img)
+        item.office_img=require("@/assets/img/"+item.office_img)
       })
       this.itemHeader=this.officeAll.splice(0,9)
       this.itembody=this.officeAll.splice(0,9)

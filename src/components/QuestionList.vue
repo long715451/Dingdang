@@ -1,7 +1,8 @@
 <template>
 	<div class="question-list" @click="gotoDetail(index)">
 		<div class="question-list-header">
-			<div class="img"><img :src="`https://ddys.applinzi.com/${imgurl}`" alt="" /></div>
+			<!-- <div class="img"><img v-lazy="`https://ddys.applinzi.com/${imgurl}`" /></div> -->
+            <div class="img"><img v-lazy="`http://localhost:3000/${imgurl}`" /></div>
 			<p>{{ nickname | nicknameFormat}}</p>
 		</div>
 		<div class="question-list-content">
@@ -53,15 +54,14 @@ export default {
 .question-list .question-list-header .img {
 	width: 20px;
 	height: 20px;
-	border-radius: 50%;
-	overflow: hidden;
-	border: 1px solid #ebebeb;
-	box-sizing: border-box;
 }
 
 .question-list .question-list-header .img img {
 	width: 100%;
 	object-fit: contain;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    box-sizing: border-box;
 }
 
 .question-list .question-list-header p {

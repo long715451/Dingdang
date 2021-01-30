@@ -17,7 +17,8 @@ Vue.use(Lazyload)
 
 // 引入axios模块
 import axios from 'axios'
-axios.defaults.baseURL = 'https://ddys.applinzi.com'
+axios.defaults.baseURL = '/api'
+// axios.defaults.baseURL = 'https://ddys.applinzi.com'
 Vue.prototype.axios=axios
 let toast;
 axios.interceptors.request.use(config=>{
@@ -46,13 +47,16 @@ Vue.filter('dateFormat',value=>{
 // 注册格式化昵称的全局过滤器
 Vue.filter('nicknameFormat',value=>{
     let firstLetter = value.slice(0, 1)
-    let lastLetter = value.slice(value.length - 1)
+    let lastLetter = value.slice(-1)
     return firstLetter + '***' + lastLetter
 })
 
 // 注册格式化手机号的全局过滤器
 Vue.filter('phoneNumberFormat',value=>{
-    return value.replace(/(?<=^1[\d]{2})\d{4}/g, "****");
+    let before = value.slice(0, 3)
+    let after = value.slice(-4)
+    // return value.replace(/(?<=^1[\d]{2})\d{4}/g, "****");
+    return before + '****' + after;
 })
 
 // 引入并注册全局组件

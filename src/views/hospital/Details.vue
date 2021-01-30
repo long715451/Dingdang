@@ -25,7 +25,7 @@
 		<p class="ADR" @click="gotoLocation(context[0].hospital_id)">{{ context[0].address }}</p>
 		<p class="ADR">
 			联系电话（总机）<span>{{ context[0].phone }}</span
-			><img src="../assets/03.png" />
+			><img src="@/assets/03.png" />
 		</p>
 		<router-link :to="`/Subpage?hospital=${context[0].hospital_id}`"
 			><van-tag round type="primary" text-color="#00c792"
@@ -36,7 +36,7 @@
 		<div class="Doctors" v-for="(item, index) of context" :key="index" @click="goToDetail(item.doctor_id)">
 			<div>
 				<div class="Photo">
-					<img :src="require(`../assets/img/${item.avatar}`)" />
+					<img :src="require(`@/assets/img/${item.avatar}`)" />
 				</div>
 				<div class="Text">
 					<p>

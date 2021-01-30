@@ -38,7 +38,7 @@
 					<div class="doctor-avatar">
 						<div @click="imagePreview(doctor.avatar)">
 							<img
-								:src="require(`../assets/img/${doctor.avatar}`)"
+								v-lazy="require(`@/assets/img/${doctor.avatar}`)"
 							/>
 						</div>
                         <div @click="toggleFollow">
@@ -109,7 +109,7 @@
 					<div class="public-question-title">
 						<div style="width:20px;height:20px">
 							<img
-								:src="`https://ddys.applinzi.com/${article.avatar}`"
+								:src="`http://localhost:3000/${article.avatar}`"
 								style="width:100%"
 							/>
 						</div>
