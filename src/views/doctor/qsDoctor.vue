@@ -109,7 +109,7 @@
 					<div class="public-question-title">
 						<div style="width:20px;height:20px">
 							<img
-								:src="`https://ddys.applinzi.com/${article.avatar}`"
+								:src="`http://127.0.0.1:5050/${article.avatar}`"
 								style="width:100%"
 							/>
 						</div>

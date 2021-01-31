@@ -7,7 +7,7 @@
 			</p>
 		</div>
 		<div class="order-imgbox" v-if="symptomImgs[0] != ''">
-			<img :src="`https://ddys.applinzi.com/${item}`" v-for="(item, index) of symptomImgs" :key="index" />
+			<img :src="`http://127.0.0.1:5050/${item}`" v-for="(item, index) of symptomImgs" :key="index" />
 		</div>
 
 		<div class="order-doctor">

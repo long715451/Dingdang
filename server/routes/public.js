@@ -1,18 +1,17 @@
 const mysql = require("mysql");
 let pool = mysql.createPool({
-    host: "localhost",
-    port: 3306,
-    user: "root",
-    password: "",
-    database: "ddys",
-    multipleStatements: true,
-    // host     : process.env.MYSQL_HOST,
-    // port     : process.env.MYSQL_PORT,
-    // user     : process.env.ACCESSKEY,
-    // password : process.env.SECRETKEY,
-    // database : 'app_' + process.env.APPNAME
+	host: "localhost",
+	port: 3306,
+	user: "root",
+	password: "longer11279",
+	database: "ddys",
+	multipleStatements: true,
+	// host     : process.env.MYSQL_HOST,
+	// port     : process.env.MYSQL_PORT,
+	// user     : process.env.ACCESSKEY,
+	// password : process.env.SECRETKEY,
+	// database : 'app_' + process.env.APPNAME
 });
-
 
 // 将查询数据库封装成promise
 function sqlConnect(sql, params) {
@@ -32,6 +31,7 @@ function sqlConnect(sql, params) {
 			conn.release();
 		});
 	});
+	
 }
 
-module.exports = sqlConnect
+module.exports = sqlConnect;

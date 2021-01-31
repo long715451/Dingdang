@@ -11,7 +11,7 @@
  Target Server Version : 80019
  File Encoding         : 65001
 
- Date: 24/01/2021 22:41:12
+ Date: 31/01/2021 21:38:02
 */
 
 SET NAMES utf8mb4;
@@ -1034,7 +1034,7 @@ CREATE TABLE `ddys_category_title`  (
   `title_content` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '文章二级导航标题内容',
   `category_id` int NOT NULL COMMENT '所属类别id--(关联ddys_category.id)',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 121 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 121 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of ddys_category_title
@@ -2555,10 +2555,10 @@ INSERT INTO `ddys_comment` VALUES (1365, '医生讲解的很到位，解答也�
 INSERT INTO `ddys_comment` VALUES (1366, '医生讲解的很到位，解答也很有耐心，五星好评！', 87, 97, '1421915236328', 5);
 INSERT INTO `ddys_comment` VALUES (1367, '医生讲解的很到位，解答也很有耐心，五星好评！', 40, 98, '1505950274485', 5);
 INSERT INTO `ddys_comment` VALUES (1368, '医生讲解的很到位，解答也很有耐心，五星好评！', 47, 94, '1484283294308', 5);
-INSERT INTO `ddys_comment` VALUES (1369, '医生讲解的很到位，解答也很有耐心，五星好评！', 54, 96, '1458483745910', 5);
-INSERT INTO `ddys_comment` VALUES (1370, '医生讲解的很到位，解答也很有耐心，五星好评！', 1, 100, '1427173604690', 5);
-INSERT INTO `ddys_comment` VALUES (1371, '医生讲解的很到位，解答也很有耐心，五星好评！', 19, 81, '1462734994225', 5);
-INSERT INTO `ddys_comment` VALUES (1372, '医生讲解的很到位，解答也很有耐心，五星好评！', 49, 91, '1451582842226', 5);
+INSERT INTO `ddys_comment` VALUES (1369, '医生讲解的很到位，解答也很有耐心，五星好评！', 54, 104, '1458483745910', 5);
+INSERT INTO `ddys_comment` VALUES (1370, '医生讲解的很到位，解答也很有耐心，五星好评！', 1, 103, '1427173604690', 5);
+INSERT INTO `ddys_comment` VALUES (1371, '医生讲解的很到位，解答也很有耐心，五星好评！', 19, 101, '1462734994225', 5);
+INSERT INTO `ddys_comment` VALUES (1372, '医生讲解的很到位，解答也很有耐心，五星好评！', 49, 102, '1451582842226', 5);
 
 -- ----------------------------
 -- Table structure for ddys_disease
@@ -5961,7 +5961,7 @@ CREATE TABLE `ddys_follow`  (
   `user_id` int NULL DEFAULT NULL,
   `doctor_id` int NULL DEFAULT NULL,
   PRIMARY KEY (`follow_id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of ddys_follow
@@ -6518,7 +6518,7 @@ CREATE TABLE `ddys_star`  (
   `user_id` int NULL DEFAULT NULL,
   `article_id` int NULL DEFAULT NULL,
   PRIMARY KEY (`star_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 20 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 34 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of ddys_star

@@ -9,7 +9,7 @@
 							round
 							width="52px"
 							height="52px"
-							:src="`https://ddys.applinzi.com/${userInfo.avatar}`"
+							:src="`http://127.0.0.1:5050/${userInfo.avatar}`"
 							fit="cover"
 							v-if="userInfo"
 							@click="imagePreview(userInfo.avatar)"
@@ -18,7 +18,7 @@
 							round
 							width="52px"
 							height="52px"
-							:src="`https://ddys.applinzi.com/default-avatar.png`"
+							:src="`http://127.0.0.1:5050/default-avatar.png`"
 							fit="cover"
 							v-else
 						/>
@@ -139,7 +139,7 @@ export default {
 	methods: {
 		imagePreview(url) {
 			ImagePreview({
-                images: [`https://ddys.applinzi.com/${url}`],
+                images: [`http://127.0.0.1:5050/${url}`],
                 showIndex: false
 			});
         },
