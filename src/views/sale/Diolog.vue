@@ -427,7 +427,7 @@ export default {
 }
 #sale >>> .album__banner {
   height: 150px;
-  background: url(../../assets/img/b1.png) no-repeat 50%;
+  background: url(~@/assets/img/b1.png) no-repeat 50%;
   background-size: 100%;
 }
 #sale >>> .album__banner-icon {

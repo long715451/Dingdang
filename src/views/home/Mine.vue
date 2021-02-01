@@ -228,7 +228,7 @@ export default {
 }
 #mine .my-header {
 	width: 100%;
-	background: url(../../assets/images/mine/my_header.png) no-repeat scroll 0 0 / cover;
+	background: url(~@/assets/images/mine/my_header.png) no-repeat scroll 0 0 / cover;
 	box-sizing: border-box;
 	padding-top: 12px;
 	padding-bottom: 10px;
@@ -248,7 +248,7 @@ export default {
 	position: absolute;
 	top: 5px;
 	right: 10px;
-	background: url(../../assets/images/mine/setting.png) 0 0/100% 100% no-repeat;
+	background: url(~@/assets/images/mine/setting.png) 0 0/100% 100% no-repeat;
 }
 
 #mine .my-header .avatar {
@@ -302,7 +302,7 @@ export default {
 
 #mine .plus-wrap .plus-bg {
 	padding: 0 10px;
-	background: url(../../assets/images/mine/plus-bg.png) 0 0 / cover no-repeat;
+	background: url(~@/assets/images/mine/plus-bg.png) 0 0 / cover no-repeat;
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
@@ -319,7 +319,7 @@ export default {
 
 #mine .plus-wrap .plus-bg .plus-inner .plus-title {
 	padding-left: 35px;
-	background: url(../../assets/images/mine/plus.png) 10px 0px/20px no-repeat;
+	background: url(~@/assets/images/mine/plus.png) 10px 0px/20px no-repeat;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;

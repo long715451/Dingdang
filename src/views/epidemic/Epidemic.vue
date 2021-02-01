@@ -1327,7 +1327,7 @@ export default {
 	transform: translateY(-50%);
 	width: 10px;
 	height: 5px;
-	background-image: url(../../assets/images/home/arrow.png);
+	background-image: url(~@/assets/images/home/arrow.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	vertical-align: middle;
@@ -1649,7 +1649,7 @@ export default {
 	height: 187px;
 	margin-bottom: -20px;
 	background-color: #10aeb5;
-	background-image: url(../../assets/images/home/bg-header.840c435.jpg);
+	background-image: url(~@/assets/images/home/bg-header.840c435.jpg);
 }
 
 #epidemic .mapbox {
