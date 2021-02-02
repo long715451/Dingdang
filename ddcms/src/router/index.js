@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '@/views/login/Login'
+import Layout from '@/layout'
+import material from './material'
+
 
 Vue.use(VueRouter)
 
@@ -15,12 +18,11 @@ const routes = [
   },
   {
     path: '/',
-    name: 'Home',
-    component: () => import(/* webpackChunkName: "Home" */ '@/views/home/Home.vue'),
-    meta: {
-        title: '首页'
-    }
-  }
+    name: 'Layout',
+    redirect: '/material/home',
+    component: Layout
+  },
+  ...material
 ]
 
 const router = new VueRouter({
