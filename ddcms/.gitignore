@@ -1,8 +1,5 @@
 .DS_Store
 node_modules
-server/node_modules
-ddcms/node_modules
-vue-admin-template/node_modules
 /dist
 
 

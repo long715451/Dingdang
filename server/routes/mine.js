@@ -1,5 +1,4 @@
 const express = require("express");
-const app = express();
 const router = express.Router();
 const sqlConnect = require("./public");
 const md5 = require("js-md5");

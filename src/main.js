@@ -51,9 +51,9 @@ Vue.filter('nicknameFormat',value=>{
 
 // 注册格式化手机号的全局过滤器
 Vue.filter('phoneNumberFormat',value=>{
+    // return value.replace(/(?<=^1[\d]{2})\d{4}/g, "****");
     let before = value.slice(0, 3)
     let after = value.slice(-4)
-    // return value.replace(/(?<=^1[\d]{2})\d{4}/g, "****");
     return before + '****' + after;
 })
 
