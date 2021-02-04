@@ -11,6 +11,14 @@ module.exports = [
                 meta: {
                     title: '首页'
                 },
+            },
+            {
+                path: 'doctor',
+                name: 'Doctor',
+                component: ()=> import('@/views/material/Doctor'),
+                meta: {
+                    title: '首页'
+                },
             }
         ]
       }

@@ -3,7 +3,7 @@ import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import getPageTitle from '@/utils/getPageTitle'
 
-
+NProgress.configure({ showSpinner: false });
 const whiteList = ['/login']
 
 router.beforeEach((to, from, next)=>{
