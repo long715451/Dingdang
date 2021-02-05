@@ -1,7 +1,7 @@
 <template>
     <div class="side-bar" >
         <el-menu
-            default-active="/material/doctor"
+            default-active="/"
             class="el-menu-vertical-demo"
             @open="handleOpen"
             @close="handleClose"

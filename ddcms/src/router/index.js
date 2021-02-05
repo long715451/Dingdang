@@ -22,7 +22,11 @@ const routes = [
     redirect: '/material/home',
     component: Layout
   },
-  ...material
+  ...material,
+  {
+    path: '*',
+    component: ()=>import ('@/views/404')
+  }
 ]
 
 const router = new VueRouter({
